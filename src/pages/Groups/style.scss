@@ -1,0 +1,63 @@
+@use "src/styles/vars";
+@import "src/fonts/fonts.scss";
+
+.groups--title {
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+
+  h1 {
+    font-family: vars.$fontHeadersTiempos;
+  }
+}
+
+.groups--loader {
+  // margin: 12.5rem 0;
+  // padding: 12.5rem 0;
+  margin: 22.2rem 0;
+}
+
+#groups--section2-filter {
+  display: flex;
+  justify-content: center;
+  gap: 2%;
+}
+
+#groups--section3-groups {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: baseline;
+  grid-row-gap: 4rem;
+  grid-column-gap: 2%;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+// .groupCard {
+//   transition: all 0.2s;
+
+//   &:hover {
+//     color: rgb(223, 103, 4);
+//     transform: translateY(-20px);
+//   }
+// }
+
+// RESPONSIVE
+
+@media (max-width: 1355px) {
+  #groups--section2-filter {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #groups--section3-groups {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 1000px) {
+  #groups--section3-groups {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

@@ -1,0 +1,58 @@
+@use "src/styles/vars";
+@import "src/fonts/fonts.scss";
+
+.footer--nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+  padding-bottom: 3rem;
+  align-items: center;
+  h1 {
+    font-family: vars.$fontHeadersMontserrat;
+    // color: vars.$colorSecondary;
+    // color: rgb(23, 98, 185);
+    color: #202969;
+    transition: all 0.4s;
+    // color:RGB(65, 131, 196);s
+    &:hover{
+    //  color: #246fb9;
+    color: rgb(49, 126, 214);
+    }
+  }
+}
+.darkpurple {
+  color: #202969;
+  // transition: all 0.2s;
+  transition: all 0.3s;
+    // color:RGB(65, 131, 196);s
+    &:hover{
+    //  color: #246fb9;
+    color: rgb(49, 126, 214);
+    }
+}
+
+.footer--title__slogan {
+  display: flex;
+  animation: myAnim 1s ease 0s 1 normal forwards;
+  flex-direction: column;
+  text-align: left;
+  
+  p {
+    // color: RGB(65, 131, 207);
+  }
+}
+
+.footer--list {
+  display: flex;
+  flex-direction: column;
+  text-align: end;
+}
+
+@media (max-width: 1000px) {
+.footer--title__slogan {
+
+  p {
+    display: none;
+  }
+}
+}
